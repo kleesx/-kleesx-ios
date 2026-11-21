@@ -1,0 +1,61 @@
+name: Build iOS ipa
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: |
+          xcodebuild -version
+          xcodebuild -list -project ClickGui.xcodeproj
+
+      - name: Archive (unsigned / ad-hoc)
+        run: |
+          set -e
+          xcodebuild \
+            -project ClickGui.xcodeproj \
+            -scheme ClickGui \
+            -configuration Release \
+            -archivePath build/ClickGui.xcarchive \
+            archive \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Assemble ipa
+        run: |
+          set -e
+          APP="build/ClickGui.xcarchive/Products/Applications/ClickGui.app"
+          mkdir -p build/Payload
+          cp -R "$APP" build/Payload/
+          cd build
+          zip -r Kleesx_X.ipa Payload
+          ls -lh Kleesx_X.ipa
+
+      - name: Upload ipa artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Kleesx_X-ipa
+          path: build/Kleesx_X.ipa
+
+# ============================================================
+# 正式签名（可选）：
+# 上面默认出的是未签名包，下载后需用 Sideloadly / AltStore
+# 用自己的 Apple ID 重签才能装到真机。
+#
+# 若你有苹果开发者证书，可在仓库 Settings → Secrets 配置：
+#   DEVELOPER_CERTIFICATE_BASE64  证书 .p12 的 base64
+#   DEVELOPER_CERTIFICATE_PASSWORD p12 密码
+#   PROVISIONING_PROFILE_BASE64   描述文件 base64
+#   DEVELOPER_TEAM_ID             开发者团队 ID
+# 然后把 Archive 步骤换成带签名的 archive，再用
+# xcodebuild -exportArchive + exportOptions.plist 导出正式 ipa。
+# ============================================================
