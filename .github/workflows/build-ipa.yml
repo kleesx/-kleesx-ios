@@ -24,6 +24,7 @@ jobs:
             -project ClickGui.xcodeproj \
             -scheme ClickGui \
             -configuration Release \
+            -destination 'generic/platform=iOS' \
             -archivePath build/ClickGui.xcarchive \
             archive \
             CODE_SIGN_IDENTITY="-" \
