@@ -1,0 +1,235 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		222222222222222222222201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111101 /* AppDelegate.swift */; };
+		222222222222222222222202 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111102 /* ViewController.swift */; };
+		222222222222222222222203 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111103 /* index.html */; };
+		222222222222222222222204 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111105 /* bg.jpg */; };
+		222222222222222222222205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111106 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		111111111111111111111101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		111111111111111111111102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		111111111111111111111103 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		111111111111111111111105 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		111111111111111111111106 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		111111111111111111111104 /* ClickGui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickGui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		333333333333333333333301 = {
+			isa = PBXGroup;
+			children = (
+				333333333333333333333302 /* ClickGui */,
+				333333333333333333333303 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		333333333333333333333302 /* ClickGui */ = {
+			isa = PBXGroup;
+			children = (
+				111111111111111111111101 /* AppDelegate.swift */,
+				111111111111111111111102 /* ViewController.swift */,
+				111111111111111111111103 /* index.html */,
+				111111111111111111111105 /* bg.jpg */,
+				111111111111111111111106 /* Assets.xcassets */,
+			);
+			path = ClickGui;
+			sourceTree = "<group>";
+		};
+		333333333333333333333303 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				111111111111111111111104 /* ClickGui.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		444444444444444444444401 /* ClickGui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 888888888888888888888802 /* Build configuration list for PBXNativeTarget "ClickGui" */;
+			buildPhases = (
+				666666666666666666666601 /* Sources */,
+				666666666666666666666602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClickGui;
+			productName = ClickGui;
+			productReference = 111111111111111111111104 /* ClickGui.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		555555555555555555555501 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					444444444444444444444401 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 888888888888888888888801 /* Build configuration list for PBXProject "ClickGui" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = zh_CN;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 333333333333333333333301;
+			productRefGroup = 333333333333333333333303 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				444444444444444444444401 /* ClickGui */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		666666666666666666666602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222222222222222222222203 /* index.html in Resources */,
+				222222222222222222222204 /* bg.jpg in Resources */,
+				222222222222222222222205 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		666666666666666666666601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222222222222222222222201 /* AppDelegate.swift in Sources */,
+				222222222222222222222202 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		777777777777777777777701 /* Debug project */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1 $(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clickgui.menu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		777777777777777777777702 /* Release project */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clickgui.menu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "O";
+			};
+			name = Release;
+		};
+		777777777777777777777703 /* Debug target */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ClickGui/Info.plist;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clickgui.menu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		777777777777777777777704 /* Release target */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ClickGui/Info.plist;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clickgui.menu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		888888888888888888888801 /* Build configuration list for PBXProject "ClickGui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				777777777777777777777701 /* Debug project */,
+				777777777777777777777702 /* Release project */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		888888888888888888888802 /* Build configuration list for PBXNativeTarget "ClickGui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				777777777777777777777703 /* Debug target */,
+				777777777777777777777704 /* Release target */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 555555555555555555555501 /* Project object */;
+}
